@@ -71,6 +71,89 @@ xui.Class('App', 'xui.Module',{
                 })
             );
             
+            append(
+                xui.create("xui.UI.SVGPaper")
+                .setHost(host,"xui_ui_svgpaper7")
+                .setLeft("0em")
+                .setTop("47.5em")
+                .setWidth("67em")
+                .setHeight("2.5em")
+            );
+            
+            host.xui_ui_svgpaper7.append(
+                xui.create("xui.UI.MenuBar")
+                .setHost(host,"xui_ui_menubar4")
+                .setItems([
+                    {
+                        "id":"menu1",
+                        "sub":[
+                            {
+                                "id":"normal",
+                                "caption":"normal"
+                            },
+                            {
+                                "id":"disabled",
+                                "caption":"disabled",
+                                "disabled":true
+                            },
+                            {
+                                "id":"image",
+                                "caption":"image",
+                                "imageClass":"xui-icon-xui"
+                            },
+                            {
+                                "type":"split"
+                            },
+                            {
+                                "id":"checkbox 1",
+                                "caption":"checkbox 1",
+                                "type":"checkbox"
+                            },
+                            {
+                                "id":"checkbox 2",
+                                "caption":"checkbox 2",
+                                "type":"checkbox"
+                            }
+                        ],
+                        "caption":"menu1"
+                    },
+                    {
+                        "id":"menu2",
+                        "sub":[
+                            {
+                                "id":"sub menu 1",
+                                "caption":"sub menu 1",
+                                "add":"[Ctrl+F]",
+                                "sub":[
+                                    {
+                                        "id":"sub 1",
+                                        "type":"radiobox"
+                                    },
+                                    {
+                                        "id":"sub 2",
+                                        "type":"radiobox"
+                                    },
+                                    {
+                                        "id":"sub 3"
+                                    }
+                                ]
+                            },
+                            {
+                                "id":"sub menu 2",
+                                "caption":"sub menu 2",
+                                "add":"[Ctrl+T]",
+                                "sub":[
+                                    "sub 3",
+                                    "sub 4"
+                                ]
+                            }
+                        ],
+                        "caption":"menu2"
+                    }
+                ])
+                .setTop("4.166666666666667em")
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
