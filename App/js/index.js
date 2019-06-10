@@ -34,11 +34,11 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"xui_svg_text1")
                 .setSvgTag("Shapes:Text")
                 .setAttr({
+                    "x":321,
+                    "y":58.5,
                     "text":"Welcome to B-Words",
                     "font-size":"50px",
-                    "font-weight":"bold",
-                    "x":321,
-                    "y":58.5
+                    "font-weight":"bold"
                 })
             );
             
@@ -51,6 +51,16 @@ xui.Class('App', 'xui.Module',{
                 .setWidth("12.083333333333334em")
                 .setHeight("5.416666666666667em")
                 .setCaption("Open B-Words")
+                .onClick([
+                    {
+                        "desc":"Action 1",
+                        "type":"page",
+                        "target":"App.Writer",
+                        "args":[true],
+                        "method":"switch",
+                        "event":1
+                    }
+                ])
                 .setCustomStyle({
                     "KEY":{
                         "font-size":"20px"
