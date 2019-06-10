@@ -115,7 +115,7 @@ xui.Class('App', 'xui.Module',{
                                 "type":"checkbox"
                             }
                         ],
-                        "caption":"menu1"
+                        "caption":"Menu"
                     },
                     {
                         "id":"menu2",
@@ -148,7 +148,7 @@ xui.Class('App', 'xui.Module',{
                                 ]
                             }
                         ],
-                        "caption":"menu2"
+                        "caption":""
                     }
                 ])
                 .setTop("4.166666666666667em")
